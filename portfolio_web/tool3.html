@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RuMing's Cryptocurrency Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+</head>
+<body>
+<header>
+    <h1>Ruming's Cryptocurrency Portfolio Demo</h1>
+    <hr>
+</header>
+
+<div id="block1">
+    <div id="block11">
+        <nav> <!-- 本站统一的导航栏 -->
+            <h2>Navigator</h2>
+            <ul>
+                <li id="port0"><a href="index.html">Main Page</a></li>
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+                <li><a href="#">Portfolio 4</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <aside> <!-- 侧边栏在主内容右侧 -->
+            <h2>Tools</h2>
+            <ul>
+                <li><a href="tool1.html">Tool 1</a></li>
+                <li><a href="tool2.html">Tool 2</a></li>
+                <li><a href="tool3.html">Tool 3</a></li>
+                <li><a href="#">Tool 4</a></li>
+                <li><a href="#">Tool 5</a></li>
+                <li><a href="#">Tool 6</a></li>
+                <!-- 侧边栏有n个超链接，略略略…… -->
+            </ul>
+        </aside>
+    </div>
+
+
+    <main> <!-- 网页主体内容 -->
+        <article>
+            <h2>Tool 3</h2>
+            <p id="description"><b>Description</b>: This page is the <i>Trader Book Depth</i>.</p>
+            <p><b>Tutorial</b>:
+            <ol>
+                <li>Step 1: Input Ticker and confirm</li>
+                <li>Step 2. You can refresh the data by the same button (default interval is 5s).</li>
+
+            </ol>
+            </p>
+            <div id="'time">
+                <p id="beijingtime"></p>
+                <p id="latime">US Pacific</p>
+                <p id="nytime"></p>
+            </div>
+            <hr>
+
+            <div id="tool3">
+                <h3 style="color:pink; margin: 0 auto; text-align: center">Tool 3 Trading Depth</h3>
+                <div id="tick_input1" class="tick_input">
+                    <label>Ticker(Uppercase): </label>
+                    <input placeholder="Input tick here">
+                    <input type="submit" value="Confirm/Refresh" class="guessSubmit" id="confirm1">
+                    <div id="tool3_table">
+                        <table id="huobi" border="1" cellspacing="0">
+                            <caption><b>Huobi Order Book</b></caption>
+                            <tr>
+                                <th align="center" valign="middle">Quantity</th>
+                                <th align="center" valign="middle">Price</th>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">1</td>
+                                <td align="center" valign="middle">1</td>
+
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">2</td>
+                                <td align="center" valign="middle">2</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">3</td>
+                                <td align="center" valign="middle">3</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">4</td>
+                                <td align="center" valign="middle">4</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">5</td>
+                                <td align="center" valign="middle">5</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">6</td>
+                                <td align="center" valign="middle">6</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">7</td>
+                                <td align="center" valign="middle">7</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">8</td>
+                                <td align="center" valign="middle">8</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">9</td>
+                                <td align="center" valign="middle">9</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">10</td>
+                                <td align="center" valign="middle">10</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">11</td>
+                                <td align="center" valign="middle">11</td>
+                            </tr>
+                        </table>
+                        <div id="plot" style="width: 600px;height:400px;"></div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- 此处包含一个 article（一篇文章），内容略…… -->
+        </article>
+    </main>
+</div>
+
+
+<hr>
+<footer>
+    <p>Contact me: <a href="mailto:rumingli@usc.edu">rumingli@usc.edu</a></p>
+    <p>© 2021 Ruming ALL RIGHTS RESERVED</p>
+</footer>
+
+<script src="tool3_script.js"></script>
+
+</body>
+
+</html>
+

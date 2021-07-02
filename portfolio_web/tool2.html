@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RuMing's Cryptocurrency Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<header>
+    <h1>Ruming's Cryptocurrency Portfolio Demo</h1>
+    <hr>
+</header>
+
+<div id="block1">
+    <div id="block11">
+        <nav> <!-- 本站统一的导航栏 -->
+            <h2>Navigator</h2>
+            <ul>
+                <li id="port0"><a href="index.html">Main Page</a></li>
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+                <li><a href="#">Portfolio 4</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <aside> <!-- 侧边栏在主内容右侧 -->
+            <h2>Tools</h2>
+            <ul>
+                <li><a href="tool1.html">Tool 1</a></li>
+                <li><a href="tool2.html">Tool 2</a></li>
+                <li><a href="tool3.html">Tool 3</a></li>
+                <li><a href="#">Tool 4</a></li>
+                <li><a href="#">Tool 5</a></li>
+                <li><a href="#">Tool 6</a></li>
+                <!-- 侧边栏有n个超链接，略略略…… -->
+            </ul>
+        </aside>
+    </div>
+
+
+    <main> <!-- 网页主体内容 -->
+        <article>
+            <h2>Tool 2</h2>
+            <p id="description"><b>Description</b>: This page is the the <i>Last Price Data</i>.</p>
+            <p><b>Tutorial</b>:
+            <ol>
+                <li>Step 1: Input the ticker you want and confirm</li>
+                <li>Step 2. You can refresh the data by the same button (default interval is 5s).</li>
+
+            </ol>
+            </p>
+            <div id="'time">
+                <p id="beijingtime"></p>
+                <p id="latime">US Pacific</p>
+                <p id="nytime"></p>
+            </div>
+            <hr>
+
+            <div id="tool2">
+                <h3 style="color:pink; margin: 0 auto; text-align: center">Tool 2 Last Price Data</h3>
+                <div id="tick_input1" class="tick_input">
+                    <label>Ticker(Uppercase): </label>
+                    <input placeholder="Input tick here">
+                    <input type="submit" value="Confirm/Refresh" class="guessSubmit" id="confirm1">
+
+                    <table border="1" cellspacing="0">
+                        <caption>Last Price</caption>
+                        <tr>
+                            <th align="center" valign="middle">Tick</th>
+                            <th align="center" valign="middle">Huobi</th>
+                            <th align="center" valign="middle">xxx</th>
+                            <th align="center" valign="middle">Binance</th>
+                            <th align="center" valign="middle">xxx</th>
+                        </tr>
+                        <tr>
+                            <th align="center" valign="middle">Tick</th>
+                            <th align="center" valign="middle">Huobi</th>
+                            <th align="center" valign="middle">xxx</th>
+                            <th align="center" valign="middle">Binance</th>
+                            <th align="center" valign="middle">xxx</th>
+                        </tr>
+                        <tr>
+                            <th align="center" valign="middle">Tick</th>
+                            <th align="center" valign="middle">Huobi</th>
+                            <th align="center" valign="middle">xxx</th>
+                            <th align="center" valign="middle">Binance</th>
+                            <th align="center" valign="middle">xxx</th>
+                        </tr>
+                        <tr>
+                            <th align="center" valign="middle">Tick</th>
+                            <th align="center" valign="middle">Huobi</th>
+                            <th align="center" valign="middle">xxx</th>
+                            <th align="center" valign="middle">Binance</th>
+                            <th align="center" valign="middle">xxx</th>
+                        </tr>
+                        <tr>
+                            <th align="center" valign="middle">Tick</th>
+                            <th align="center" valign="middle">Huobi</th>
+                            <th align="center" valign="middle">xxx</th>
+                            <th align="center" valign="middle">Binance</th>
+                            <th align="center" valign="middle">xxx</th>
+                        </tr>
+
+                    </table>
+                </div>
+
+
+            </div>
+
+
+            <!-- 此处包含一个 article（一篇文章），内容略…… -->
+        </article>
+    </main>
+</div>
+
+
+<hr>
+<footer>
+    <p>Contact me: <a href="mailto:rumingli@usc.edu">rumingli@usc.edu</a></p>
+    <p>© 2021 Ruming ALL RIGHTS RESERVED</p>
+</footer>
+
+<script src="tool2_script.js"></script>
+
+</body>
+</html>

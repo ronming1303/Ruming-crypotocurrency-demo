@@ -1,0 +1,101 @@
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Faster One', cursive;
+}
+
+h2 {
+    color: red;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    list-style-type: square;
+}
+
+#block1 {
+    display: grid;
+    grid-template-columns: 1fr 6fr !important;
+}
+
+div#block11 {
+    border-style: solid;
+    /*border-right-style: none;*/
+    /*margin:0 auto;*/
+    /*background: darkgrey;*/
+    /*width:200px;*/
+    /*height:200px;*/
+    /*border:2px solid darkslategray;*/
+    /*border-radius:30px;*/
+    /*text-align: center;*/
+    /*line-height: 200px;*/
+}
+
+main {
+    border-style: solid;
+    border-left-style: none;
+    /*margin:0 auto;*/
+    /*background: darkgrey;*/
+    /*width:200px;*/
+    /*height:200px;*/
+    /*border:2px solid darkslategray;*/
+    /*border-radius:30px;*/
+    /*text-align: center;*/
+    /*line-height: 200px;*/
+}
+
+#description {
+    /*border-style: dashed;*/
+    border-left-style: none;
+    border-right-style: none;
+}
+
+#\'time {
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+#panel\ data {
+    display: grid;
+    grid-template-columns:3fr 1fr 3fr !important;
+}
+
+#tool {
+    border-style: dotted;
+}
+
+table {
+    margin: 0 auto;
+    text-align: center;
+    border-style: solid;
+}
+
+div#plot {
+    border-style: dotted;
+     border_left-style: none;
+    border_right-style: none;
+    border_bottom_style: none;
+}
+
+#tool1 {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+#tool1 > table{
+    border-style: solid;
+}
+
+.tick_input {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#tool3_table {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}

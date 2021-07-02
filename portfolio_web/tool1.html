@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RuMing's Cryptocurrency Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+<header>
+    <h1>Ruming's Cryptocurrency Portfolio Demo</h1>
+    <hr>
+</header>
+
+<div id="block1">
+    <div id="block11">
+        <nav> <!-- 本站统一的导航栏 -->
+            <h2>Navigator</h2>
+            <ul>
+                <li id="port0"><a href="index.html">Main Page</a></li>
+                <li><a href="#">Portfolio 1</a></li>
+                <li><a href="#">Portfolio 2</a></li>
+                <li><a href="#">Portfolio 3</a></li>
+                <li><a href="#">Portfolio 4</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <aside> <!-- 侧边栏在主内容右侧 -->
+            <h2>Tools</h2>
+            <ul>
+                <li><a href="tool1.html">Tool 1</a></li>
+                <li><a href="tool2.html">Tool 2</a></li>
+                <li><a href="tool3.html">Tool 3</a></li>
+                <li><a href="#">Tool 4</a></li>
+                <li><a href="#">Tool 5</a></li>
+                <li><a href="#">Tool 6</a></li>
+                <!-- 侧边栏有n个超链接，略略略…… -->
+            </ul>
+        </aside>
+    </div>
+
+
+    <main> <!-- 网页主体内容 -->
+        <article>
+            <h2>Tool 1</h2>
+            <p id="description"><b>Description</b>: This page is the the <i>Spread Monitor</i>.</p>
+            <p><b>Tutorial</b>:
+                <ol>
+            <li>Step 1. Input the ticker (better be uppercase) of any cryptocurrency you want, then confirm.</li>
+            <li>Step 2. You can refresh the data by the same button (default interval is 5s). </li>
+            <li>Step 3. Click the 'Plotting' button to draw the spread dynamically (default interval is 5s). </li>
+        </ol>
+                 </p>
+            <div id="'time">
+                <p id="beijingtime"></p>
+                <p id="latime">US Pacific</p>
+                <p id="nytime"></p>
+            </div>
+            <hr>
+            <div id="panel data">
+                <div id="tool">
+                    <h3 style="color:pink; margin: 0 auto; text-align: center">Tool 1 Quote Book</h3>
+                    <div id="tick_input">
+                        <label>Ticker(Uppercase): </label>
+                        <input placeholder="Input tick here">
+                        <input type="submit" value="Confirm/Refresh" class="guessSubmit">
+                    </div>
+
+                    <div id="tool1">
+
+                        <table id="huobi" border="1" cellspacing="0">
+                            <caption><b>Huobi</b></caption>
+                            <tr>
+                                <th align="center" valign="middle">Quantity</th>
+                                <th align="center" valign="middle">Price</th>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">1</td>
+                                <td align="center" valign="middle">1</td>
+
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">2</td>
+                                <td align="center" valign="middle">2</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">3</td>
+                                <td align="center" valign="middle">3</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">4</td>
+                                <td align="center" valign="middle">4</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">5</td>
+                                <td align="center" valign="middle">5</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">6</td>
+                                <td align="center" valign="middle">6</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">7</td>
+                                <td align="center" valign="middle">7</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">8</td>
+                                <td align="center" valign="middle">8</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">9</td>
+                                <td align="center" valign="middle">9</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">10</td>
+                                <td align="center" valign="middle">10</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">11</td>
+                                <td align="center" valign="middle">11</td>
+                            </tr>
+                        </table>
+                        <table id="binance" border="1" cellspacing="0">
+                            <caption><b>Binance</b></caption>
+                            <tr>
+                                <th align="center" valign="middle">Quantity</th>
+                                <th align="center" valign="middle">Price</th>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">1</td>
+                                <td align="center" valign="middle">1</td>
+
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">2</td>
+                                <td align="center" valign="middle">2</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">3</td>
+                                <td align="center" valign="middle">3</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">4</td>
+                                <td align="center" valign="middle">4</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">5</td>
+                                <td align="center" valign="middle">5</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">6</td>
+                                <td align="center" valign="middle">6</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">7</td>
+                                <td align="center" valign="middle">7</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">8</td>
+                                <td align="center" valign="middle">8</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">9</td>
+                                <td align="center" valign="middle">9</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">10</td>
+                                <td align="center" valign="middle">10</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">11</td>
+                                <td align="center" valign="middle">11</td>
+                            </tr>
+                        </table>
+                        <table id="okex" border="1" cellspacing="0">
+                            <caption><b>Okex</b></caption>
+                            <tr>
+                                <th align="center" valign="middle">Quantity</th>
+                                <th align="center" valign="middle">Price</th>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">1</td>
+                                <td align="center" valign="middle">1</td>
+
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">2</td>
+                                <td align="center" valign="middle">2</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">3</td>
+                                <td align="center" valign="middle">3</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">4</td>
+                                <td align="center" valign="middle">4</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">5</td>
+                                <td align="center" valign="middle">5</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">6</td>
+                                <td align="center" valign="middle">6</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">7</td>
+                                <td align="center" valign="middle">7</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">8</td>
+                                <td align="center" valign="middle">8</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">9</td>
+                                <td align="center" valign="middle">9</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">10</td>
+                                <td align="center" valign="middle">10</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">11</td>
+                                <td align="center" valign="middle">11</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div id="asset">
+                    <table border="1" cellspacing="0">
+                        <caption><b>Asset Summary</b></caption>
+                        <tr>
+                            <th align="center" valign="middle">Asset</th>
+                            <th align="center" valign="middle">Quantity</th>
+                            <th align="center" valign="middle">Value</th>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="middle">USDT</td>
+                            <td align="center" valign="middle">XXXX</td>
+                            <td align="center" valign="middle">XXXX</td>
+
+                        </tr>
+                        <tr>
+                            <td align="center" valign="middle">SHIB</td>
+                            <td align="center" valign="middle">XXXX</td>
+                            <td align="center" valign="middle">XXXX</td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="middle">xx</td>
+                            <td align="center" valign="middle">xx</td>
+                            <td align="center" valign="middle">xx</td>
+                        </tr>
+                    </table>
+
+
+                    <br>
+                    <table id='spread_table' border="1" cellspacing="0">
+                        <caption><b>Spread Summary</b></caption>
+                        <tr>
+                            <th align="center" valign="middle">Exchange</th>
+                            <th align="center" valign="middle">Price</th>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="middle">Huobi</td>
+                            <td align="center" valign="middle">xx</td>
+
+                        </tr>
+                        <tr>
+                            <td align="center" valign="middle">Binance</td>
+                            <td align="center" valign="middle">xx</td>
+                        </tr>
+                        <tr>
+                            <td align="center" valign="middle">Spread</td>
+                            <td align="center" valign="middle">xx</td>
+                        </tr>
+                    </table>
+
+
+                </div>
+                <div id="plot">
+                    <h3 style="color:pink; margin: 0 auto; text-align: center">Spread Plot</h3>
+                    <button id="start">Start Plotting Spread</button>
+                    <div id="main" style="width: 100%;height:400px;"></div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- 此处包含一个 article（一篇文章），内容略…… -->
+        </article>
+    </main>
+</div>
+
+
+<hr>
+<footer>
+    <p>Contact me: <a href="mailto:rumingli@usc.edu">rumingli@usc.edu</a></p>
+    <p>© 2021 Ruming ALL RIGHTS RESERVED</p>
+</footer>
+
+<script src="tool1_script.js"></script>
+
+<script>
+    var interval;
+    var x = 0;
+    var y = 10;
+    var data = [];
+    var list = [];
+
+    function Line_append(x_value, y_value) {
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('main'));
+        data.push(y_value);
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: 'Spread Line'
+            },
+            backgroundColor: '#FFFFFF',
+            legend: {
+                data: ['Live Spread']
+            },
+            tooltip: {//鼠标浮动时的工具条，显示鼠标所在区域的数据，trigger这个地方每种图有不同的设置
+                trigger: 'axis'
+            },
+            calculable: true,
+            xAxis: [
+                {
+                    // 让x轴自适应
+                    <!--axisLabel:{-->
+                    <!--rotate: 30,-->
+                    <!--interval:0-->
+                    <!--},-->
+
+                    axisLine: {
+                        lineStyle: {
+                            color: '#CCCCCC'
+                        }
+                    },
+                    type: 'category',
+                    boundaryGap: true, //不从0刻度开始
+                    // data:[]  X轴的定义
+                    data: function () {
+
+                        list.push(x_value);
+                        return list;
+                    }()
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value',
+                    axisLine: {
+                        lineStyle: {
+                            color: '#CCCCCC'
+                        }
+                    }
+                }
+            ],
+            series: [
+                {
+                    name: 'Spread',
+                    type: 'line',
+                    // symbol:'none',//原点
+                    smooth: 0,//弧度
+                    color: ['#66AEDE'],
+                    // data:Y轴数据
+                    data: data
+                },
+            ]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    }
+
+    var interval;
+    $(function () {
+        $("#start").click(function () {
+            interval = setInterval(refresh, 5000);
+        });
+    });
+
+    function refresh() {
+        y = document.querySelector("#spread_table > tbody > tr:nth-child(4) > td:nth-child(2)").textContent;
+        Line_append(x, y);
+        x = x + 1;
+    }
+</script>
+
+</body>
+</html>
