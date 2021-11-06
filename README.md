@@ -1,6 +1,6 @@
 # Ruming-crypotocurrency-demo
 
-Hi I'm Ruming, a algorithms trader, this this my cryptocurrency trading system prototpye. This repository is a web GUI written by HTML. For the algorthms, I open source of them in my code repository [TripleM](https://github.com/ronming1303/TripleM/blob/main/README.md).
+Hi I'm Ruming, an algorithms trader, this this my cryptocurrency trading system prototpye. This repository is a web GUI written by HTML. For the trading algorthms, I open source of them in my code repository [TripleM](https://github.com/ronming1303/TripleM/blob/main/README.md).
 
 Here is the brief descriptions of the GUI tool in this repository.
 
